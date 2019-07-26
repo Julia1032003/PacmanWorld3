@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ez6-MT-uMX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o4E-dD-GlB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
         <scene sceneID="Zxj-ri-ObB">
             <objects>
-                <tableViewController id="7ZS-YD-KYk" sceneMemberID="viewController">
+                <tableViewController id="7ZS-YD-KYk" customClass="TableViewController" customModule="PacmanWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QjB-GV-a2r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="eRO-GY-Jsr">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="coh-6L-LwV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="200" id="coh-6L-LwV">
                                         <rect key="frame" x="0.0" y="18" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="coh-6L-LwV" id="6m0-B6-73Z">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="關於角蛙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fv-aC-Rwp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="關於角蛙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fv-aC-Rwp">
                                                     <rect key="frame" x="230" y="60" width="146" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -38,6 +38,11 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9Fv-aC-Rwp" firstAttribute="leading" secondItem="1KR-Y3-e9v" secondAttribute="trailing" constant="43" id="2DP-wC-Uok"/>
+                                                <constraint firstItem="9Fv-aC-Rwp" firstAttribute="top" secondItem="6m0-B6-73Z" secondAttribute="topMargin" constant="49" id="PG3-SL-Rvh"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Fv-aC-Rwp" secondAttribute="trailing" constant="20" symbolic="YES" id="mlV-G8-dqF"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -48,16 +53,15 @@
                             </tableViewSection>
                             <tableViewSection id="Duf-lE-gxv">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="w82-Bd-hU1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="200" id="w82-Bd-hU1">
                                         <rect key="frame" x="0.0" y="254" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w82-Bd-hU1" id="pMz-Cm-MdL">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的寵物" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkM-m3-DrF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的寵物" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkM-m3-DrF">
                                                     <rect key="frame" x="230" y="60" width="146" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -67,6 +71,11 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VkM-m3-DrF" secondAttribute="trailing" constant="20" symbolic="YES" id="0av-Jf-SeA"/>
+                                                <constraint firstItem="VkM-m3-DrF" firstAttribute="top" secondItem="pMz-Cm-MdL" secondAttribute="topMargin" constant="49" id="4PY-9k-BGk"/>
+                                                <constraint firstItem="VkM-m3-DrF" firstAttribute="leading" secondItem="k9z-1l-CdO" secondAttribute="trailing" constant="43" id="bPc-k7-dxh"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -77,16 +86,15 @@
                             </tableViewSection>
                             <tableViewSection id="13Y-NC-5Is">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="XHf-et-5G2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="200" id="XHf-et-5G2">
                                         <rect key="frame" x="0.0" y="490" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XHf-et-5G2" id="AB5-HC-YlH">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="角蛙醫療" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqT-fV-kAL">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="角蛙醫療" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqT-fV-kAL">
                                                     <rect key="frame" x="230" y="60" width="146" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -96,6 +104,11 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YqT-fV-kAL" secondAttribute="trailing" constant="20" symbolic="YES" id="aJL-6N-SdF"/>
+                                                <constraint firstItem="YqT-fV-kAL" firstAttribute="top" secondItem="AB5-HC-YlH" secondAttribute="topMargin" constant="49" id="du5-bW-WAb"/>
+                                                <constraint firstItem="YqT-fV-kAL" firstAttribute="leading" secondItem="LjF-JL-U3l" secondAttribute="trailing" constant="43" id="fIM-Cs-Apg"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -114,7 +127,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oOT-Ee-szn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3259.4202898550725" y="-180.13392857142856"/>
+            <point key="canvasLocation" x="5079.7101449275369" y="-180.13392857142856"/>
         </scene>
         <!--我的寵物-->
         <scene sceneID="oTA-db-gdr">
@@ -124,9 +137,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Pp-3S-ob4" userLabel="ballView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Pp-3S-ob4" userLabel="ballView">
                                 <rect key="frame" x="10" y="225" width="180" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UNADJUSTEDNONRAW_thumb_1a" translatesAutoresizingMaskIntoConstraints="NO" id="ir9-8s-5Q5">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
@@ -148,9 +160,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="51N-Im-cYf" userLabel="balaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51N-Im-cYf" userLabel="balaView">
                                 <rect key="frame" x="220" y="225" width="180" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bala" translatesAutoresizingMaskIntoConstraints="NO" id="FPC-2A-Y78">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
@@ -172,9 +183,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Nf-4F-Rtz" userLabel="lemonView">
-                                <rect key="frame" x="10" y="500" width="180" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nf-4F-Rtz" userLabel="lemonView">
+                                <rect key="frame" x="10" y="505" width="180" height="175"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lemon" translatesAutoresizingMaskIntoConstraints="NO" id="h8v-Iv-uQA">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
@@ -196,9 +206,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oo4-px-n8T" userLabel="girlView">
-                                <rect key="frame" x="220" y="500" width="180" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oo4-px-n8T" userLabel="girlView">
+                                <rect key="frame" x="220" y="505" width="180" height="175"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="littlegirl" translatesAutoresizingMaskIntoConstraints="NO" id="UYF-ys-uZQ">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
@@ -220,9 +229,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxR-yM-wiL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxR-yM-wiL">
                                 <rect key="frame" x="220" y="225" width="180" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
@@ -234,9 +242,8 @@
                                     <segue destination="23E-tP-8Yf" kind="show" id="uxM-Bt-N9y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwD-1L-oqn">
-                                <rect key="frame" x="10" y="500" width="180" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwD-1L-oqn">
+                                <rect key="frame" x="10" y="505" width="180" height="175"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
@@ -248,9 +255,8 @@
                                     <segue destination="qrI-Bv-WPi" kind="show" id="xqg-4y-dw1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-m7-Lka">
-                                <rect key="frame" x="220" y="500" width="180" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-m7-Lka">
+                                <rect key="frame" x="220" y="505" width="180" height="175"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
@@ -261,19 +267,21 @@
                                     <segue destination="9n0-pH-Xbd" kind="show" id="m6h-EH-Igc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的寵物" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMS-sg-DjO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的寵物" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMS-sg-DjO">
                                 <rect key="frame" x="123" y="98" width="168" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEW-2p-GGd">
-                                <rect key="frame" x="0.0" y="119" width="180" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEW-2p-GGd">
+                                <rect key="frame" x="0.0" y="225" width="180" height="180"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="TZT-mc-LTS"/>
+                                    <constraint firstAttribute="width" constant="180" id="oSU-Qp-ZAq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="球球">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -284,13 +292,49 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.76271934460000002" blue="0.79869434930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Nf-4F-Rtz" firstAttribute="bottom" secondItem="oo4-px-n8T" secondAttribute="bottom" id="0zV-TA-gX3"/>
+                            <constraint firstItem="7Pp-3S-ob4" firstAttribute="leading" secondItem="kwD-1L-oqn" secondAttribute="leading" id="3er-EC-8V8"/>
+                            <constraint firstItem="6Nf-4F-Rtz" firstAttribute="top" secondItem="kwD-1L-oqn" secondAttribute="top" id="6tC-8y-HnR"/>
+                            <constraint firstItem="6Nf-4F-Rtz" firstAttribute="bottom" secondItem="dwG-m7-Lka" secondAttribute="bottom" id="7TB-wE-qok"/>
+                            <constraint firstItem="7Pp-3S-ob4" firstAttribute="leading" secondItem="dXV-q6-QTj" secondAttribute="leading" constant="10" id="9bP-yp-I1H"/>
+                            <constraint firstItem="CEW-2p-GGd" firstAttribute="top" secondItem="KMS-sg-DjO" secondAttribute="bottom" constant="64" id="BNT-gj-eLU"/>
+                            <constraint firstItem="7Pp-3S-ob4" firstAttribute="trailing" secondItem="6Nf-4F-Rtz" secondAttribute="trailing" id="Bdk-LL-IVu"/>
+                            <constraint firstItem="CEW-2p-GGd" firstAttribute="top" secondItem="51N-Im-cYf" secondAttribute="top" id="D14-Q5-1Se"/>
+                            <constraint firstItem="MxR-yM-wiL" firstAttribute="leading" secondItem="dwG-m7-Lka" secondAttribute="leading" id="E8J-SY-YAU"/>
+                            <constraint firstItem="CEW-2p-GGd" firstAttribute="top" secondItem="OsN-Xg-YwT" secondAttribute="top" constant="225" id="EJp-fk-STS"/>
+                            <constraint firstItem="dXV-q6-QTj" firstAttribute="trailing" secondItem="MxR-yM-wiL" secondAttribute="trailing" constant="14" id="FLl-eZ-eDm"/>
+                            <constraint firstItem="7Pp-3S-ob4" firstAttribute="trailing" secondItem="kwD-1L-oqn" secondAttribute="trailing" id="I5p-hG-YNH"/>
+                            <constraint firstItem="KMS-sg-DjO" firstAttribute="top" secondItem="dXV-q6-QTj" secondAttribute="top" constant="98" id="Llx-44-0QA"/>
+                            <constraint firstItem="CEW-2p-GGd" firstAttribute="bottom" secondItem="7Pp-3S-ob4" secondAttribute="bottom" id="LuV-iB-jfv"/>
+                            <constraint firstItem="51N-Im-cYf" firstAttribute="leading" secondItem="CEW-2p-GGd" secondAttribute="trailing" constant="40" id="PoJ-lo-Ijd"/>
+                            <constraint firstItem="CEW-2p-GGd" firstAttribute="top" secondItem="MxR-yM-wiL" secondAttribute="top" id="R8o-7v-k64"/>
+                            <constraint firstItem="51N-Im-cYf" firstAttribute="leading" secondItem="7Pp-3S-ob4" secondAttribute="trailing" constant="30" id="ReU-CV-w5O"/>
+                            <constraint firstItem="MxR-yM-wiL" firstAttribute="trailing" secondItem="oo4-px-n8T" secondAttribute="trailing" id="VCf-Og-Bdg"/>
+                            <constraint firstItem="MxR-yM-wiL" firstAttribute="trailing" secondItem="dwG-m7-Lka" secondAttribute="trailing" id="VDx-dD-2yl"/>
+                            <constraint firstItem="MxR-yM-wiL" firstAttribute="leading" secondItem="oo4-px-n8T" secondAttribute="leading" id="Vsv-fu-mG7"/>
+                            <constraint firstItem="CEW-2p-GGd" firstAttribute="top" secondItem="7Pp-3S-ob4" secondAttribute="top" id="bIh-vs-CwN"/>
+                            <constraint firstItem="KMS-sg-DjO" firstAttribute="centerX" secondItem="OsN-Xg-YwT" secondAttribute="centerX" id="e1r-qg-xLz"/>
+                            <constraint firstItem="MxR-yM-wiL" firstAttribute="leading" secondItem="51N-Im-cYf" secondAttribute="leading" id="eBK-D4-g1Y"/>
+                            <constraint firstItem="oo4-px-n8T" firstAttribute="top" secondItem="MxR-yM-wiL" secondAttribute="bottom" constant="100" id="gS3-Ur-ilQ"/>
+                            <constraint firstItem="CEW-2p-GGd" firstAttribute="baseline" secondItem="MxR-yM-wiL" secondAttribute="baseline" id="kGK-Md-ONd"/>
+                            <constraint firstItem="7Pp-3S-ob4" firstAttribute="leading" secondItem="6Nf-4F-Rtz" secondAttribute="leading" id="nT4-oG-RJa"/>
+                            <constraint firstItem="6Nf-4F-Rtz" firstAttribute="bottom" secondItem="kwD-1L-oqn" secondAttribute="bottom" id="pPq-wx-gkH"/>
+                            <constraint firstItem="6Nf-4F-Rtz" firstAttribute="top" secondItem="dwG-m7-Lka" secondAttribute="top" id="pzq-wV-T4x"/>
+                            <constraint firstItem="CEW-2p-GGd" firstAttribute="bottom" secondItem="51N-Im-cYf" secondAttribute="bottom" id="qdF-Vt-e7b"/>
+                            <constraint firstItem="KMS-sg-DjO" firstAttribute="leading" secondItem="dXV-q6-QTj" secondAttribute="leading" constant="123" id="sso-5A-4H1"/>
+                            <constraint firstItem="MxR-yM-wiL" firstAttribute="trailing" secondItem="51N-Im-cYf" secondAttribute="trailing" id="tya-sE-ksj"/>
+                            <constraint firstItem="6Nf-4F-Rtz" firstAttribute="top" secondItem="CEW-2p-GGd" secondAttribute="bottom" constant="100" id="xaO-Tu-exT"/>
+                            <constraint firstItem="CEW-2p-GGd" firstAttribute="leading" secondItem="OsN-Xg-YwT" secondAttribute="leading" id="ymK-kI-Do1"/>
+                            <constraint firstItem="dXV-q6-QTj" firstAttribute="bottom" secondItem="6Nf-4F-Rtz" secondAttribute="bottom" constant="128" id="zOD-B7-3rv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dXV-q6-QTj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="我的寵物" image="2" landscapeImage="2" largeContentSizeImage="2" id="xVv-lN-Pue"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEH-0f-lOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4113.04347826087" y="-144.64285714285714"/>
+            <point key="canvasLocation" x="5933.3333333333339" y="-144.64285714285714"/>
         </scene>
         <!--ballView Controller-->
         <scene sceneID="zob-gS-er8">
@@ -300,21 +344,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="球球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-Bx-cnJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="球球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-Bx-cnJ">
                                 <rect key="frame" x="123" y="98" width="168" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="UNADJUSTEDNONRAW_thumb_1a" translatesAutoresizingMaskIntoConstraints="NO" id="DtK-pa-grw">
+                                <rect key="frame" x="-3" y="169" width="420" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RBB-eh-M0n">
+                                <rect key="frame" x="20" y="490" width="374" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5020066352739726" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">姓名：球球
+名字由來：阿嬤取的
+品種：鐘角蛙(阿根廷角蛙)
+型別：女生
+個性：動作敏捷、較兇猛、反應快、貪吃</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.76271934460000002" blue="0.79869434930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uJP-Bx-cnJ" firstAttribute="leading" secondItem="Xf2-T4-TuX" secondAttribute="leading" constant="123" id="4lZ-Bj-aSE"/>
+                            <constraint firstItem="uJP-Bx-cnJ" firstAttribute="centerX" secondItem="D2z-Iq-wA3" secondAttribute="centerX" id="AXc-Ib-h7q"/>
+                            <constraint firstItem="uJP-Bx-cnJ" firstAttribute="top" secondItem="Xf2-T4-TuX" secondAttribute="top" constant="98" id="E2w-Pl-lrV"/>
+                            <constraint firstItem="Xf2-T4-TuX" firstAttribute="bottom" secondItem="uJP-Bx-cnJ" secondAttribute="bottom" constant="647" id="gHV-OY-iVL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xf2-T4-TuX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKQ-2g-qmG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4896" y="-145"/>
+            <point key="canvasLocation" x="6715.9420289855079" y="-145.3125"/>
         </scene>
         <!--balaView Controller-->
         <scene sceneID="1YD-4K-F9v">
@@ -324,21 +390,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="芭樂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-AE-Mxm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="芭樂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-AE-Mxm">
                                 <rect key="frame" x="123" y="98" width="168" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="bala" translatesAutoresizingMaskIntoConstraints="NO" id="FYM-re-wo0">
+                                <rect key="frame" x="-3" y="169" width="420" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vay-aE-aiz">
+                                <rect key="frame" x="20" y="490" width="374" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5020066353" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">姓名：芭樂
+名字由來：顏色較綠像芭樂
+品種：鐘角蛙與霸王角蛙混血兒(阿根廷角蛙與蘇利南角蛙混血)
+型別：男生
+個性：較敏感、易緊張、愛笑、有時候會蛙鳴</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.76271934460000002" blue="0.79869434930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6t1-AE-Mxm" firstAttribute="top" secondItem="K8r-Ll-nAQ" secondAttribute="top" constant="98" id="XCz-Jx-RlE"/>
+                            <constraint firstItem="6t1-AE-Mxm" firstAttribute="centerX" secondItem="7mP-Ix-vq5" secondAttribute="centerX" id="bKI-cg-PZS"/>
+                            <constraint firstItem="6t1-AE-Mxm" firstAttribute="leading" secondItem="K8r-Ll-nAQ" secondAttribute="leading" constant="123" id="pzn-zq-ReF"/>
+                            <constraint firstItem="K8r-Ll-nAQ" firstAttribute="bottom" secondItem="6t1-AE-Mxm" secondAttribute="bottom" constant="647" id="uFU-7M-AfB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K8r-Ll-nAQ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFi-C9-wV1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5630" y="-145"/>
+            <point key="canvasLocation" x="7449.275362318841" y="-145.3125"/>
         </scene>
         <!--lemonView Controller-->
         <scene sceneID="pun-Jj-R6R">
@@ -348,21 +436,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="雷夢" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0z-vi-zHl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雷夢" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0z-vi-zHl">
                                 <rect key="frame" x="123" y="98" width="168" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="lemon" translatesAutoresizingMaskIntoConstraints="NO" id="oWF-PG-cGs">
+                                <rect key="frame" x="-3" y="169" width="420" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Gb-CU-EaO">
+                                <rect key="frame" x="20" y="490" width="374" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5020066353" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">姓名：雷夢
+名字由來：體形像顆檸檬
+品種：綠角蛙(南美角蛙)
+型別：男生
+個性：個性平穩、彈跳力強、懂得飽，吃飽就不吃了</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.76271934460000002" blue="0.79869434930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7i0-Th-eoN" firstAttribute="bottom" secondItem="y0z-vi-zHl" secondAttribute="bottom" constant="647" id="1BC-rk-r2o"/>
+                            <constraint firstItem="y0z-vi-zHl" firstAttribute="centerX" secondItem="Nga-WG-gTE" secondAttribute="centerX" id="bB3-Xi-7i7"/>
+                            <constraint firstItem="y0z-vi-zHl" firstAttribute="leading" secondItem="7i0-Th-eoN" secondAttribute="leading" constant="123" id="yTC-4O-yow"/>
+                            <constraint firstItem="y0z-vi-zHl" firstAttribute="top" secondItem="7i0-Th-eoN" secondAttribute="top" constant="98" id="zFd-hi-PZf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7i0-Th-eoN"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGN-mf-5fV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6338" y="-145"/>
+            <point key="canvasLocation" x="8157.971014492754" y="-145.3125"/>
         </scene>
         <!--girlView Controller-->
         <scene sceneID="vix-IL-4Zx">
@@ -372,21 +482,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="小姑娘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gl-OU-I7w">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小姑娘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gl-OU-I7w">
                                 <rect key="frame" x="123" y="98" width="168" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="littlegirl" translatesAutoresizingMaskIntoConstraints="NO" id="twp-T3-weZ">
+                                <rect key="frame" x="-3" y="169" width="420" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EAo-Mg-02D">
+                                <rect key="frame" x="20" y="490" width="374" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5020066353" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">姓名：小姑娘
+名字由來：害羞像小女生
+品種：草莓角蛙(白化南美角蛙)
+型別：女生
+個性：膽小、愛睡覺、精神好時眼睛睜大很漂亮，但大部份時候看起來都很想睡</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.76271934460000002" blue="0.79869434930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Gl-OU-I7w" firstAttribute="leading" secondItem="ZrM-gK-Cnq" secondAttribute="leading" constant="123" id="EQL-6f-KDK"/>
+                            <constraint firstItem="5Gl-OU-I7w" firstAttribute="centerX" secondItem="kJI-uv-fiF" secondAttribute="centerX" id="TcC-ax-PCd"/>
+                            <constraint firstItem="ZrM-gK-Cnq" firstAttribute="bottom" secondItem="5Gl-OU-I7w" secondAttribute="bottom" constant="647" id="haR-xK-I2Y"/>
+                            <constraint firstItem="5Gl-OU-I7w" firstAttribute="top" secondItem="ZrM-gK-Cnq" secondAttribute="top" constant="98" id="sgv-Ct-Y3c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZrM-gK-Cnq"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oc4-jO-rgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7025" y="-145"/>
+            <point key="canvasLocation" x="8844.927536231884" y="-145.3125"/>
         </scene>
         <!--關於角蛙-->
         <scene sceneID="UZG-EA-y59">
@@ -396,45 +528,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvm-ye-6Ai">
-                                <rect key="frame" x="82" y="135" width="250" height="243"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvm-ye-6Ai">
+                                <rect key="frame" x="82" y="67" width="250" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="py3-NO-kmI"/>
+                                </constraints>
                                 <state key="normal" image="frog (1)"/>
                                 <connections>
                                     <segue destination="ikW-9c-j68" kind="show" id="lhE-EV-s5T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-7z-7Ry">
-                                <rect key="frame" x="82" y="453" width="250" height="245"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-7z-7Ry">
+                                <rect key="frame" x="82" y="421" width="250" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="PqB-OE-G6b"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="herbal"/>
                                 <connections>
                                     <segue destination="8TP-Fd-B7f" kind="show" id="MRu-ZT-rKI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="角蛙介紹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRr-0A-Ve5">
-                                <rect key="frame" x="146" y="386" width="122" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="角蛙介紹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRr-0A-Ve5">
+                                <rect key="frame" x="146" y="318" width="122" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="角蛙種類" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLV-7h-Dp2">
-                                <rect key="frame" x="146" y="743" width="122" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="角蛙種類" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLV-7h-Dp2">
+                                <rect key="frame" x="146" y="675" width="122" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88115368149999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xvm-ye-6Ai" firstAttribute="leading" secondItem="eFY-tc-Vj3" secondAttribute="leading" constant="82" id="7jj-gT-ZrI"/>
+                            <constraint firstItem="zY5-7z-7Ry" firstAttribute="top" secondItem="xRr-0A-Ve5" secondAttribute="bottom" constant="67" id="8kD-3b-mmp"/>
+                            <constraint firstItem="xvm-ye-6Ai" firstAttribute="centerX" secondItem="oLV-7h-Dp2" secondAttribute="centerX" id="C8c-VZ-aFs"/>
+                            <constraint firstItem="xvm-ye-6Ai" firstAttribute="top" secondItem="eFY-tc-Vj3" secondAttribute="top" constant="67" id="D4L-vO-P6A"/>
+                            <constraint firstItem="xvm-ye-6Ai" firstAttribute="centerX" secondItem="xRr-0A-Ve5" secondAttribute="centerX" id="Fmb-BA-aRD"/>
+                            <constraint firstItem="xvm-ye-6Ai" firstAttribute="leading" secondItem="zY5-7z-7Ry" secondAttribute="leading" id="Lrz-3v-mo9"/>
+                            <constraint firstItem="xvm-ye-6Ai" firstAttribute="trailing" secondItem="zY5-7z-7Ry" secondAttribute="trailing" id="TTb-gr-ffA"/>
+                            <constraint firstItem="xvm-ye-6Ai" firstAttribute="centerX" secondItem="j1N-ZP-SnN" secondAttribute="centerX" id="gFW-fz-N1J"/>
+                            <constraint firstItem="oLV-7h-Dp2" firstAttribute="top" secondItem="zY5-7z-7Ry" secondAttribute="bottom" constant="9" id="hk0-ev-GeM"/>
+                            <constraint firstItem="xRr-0A-Ve5" firstAttribute="top" secondItem="xvm-ye-6Ai" secondAttribute="bottom" constant="8" symbolic="YES" id="niq-M3-2zi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eFY-tc-Vj3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="關於角蛙" image="1" landscapeImage="1" largeContentSizeImage="1" id="gb5-um-pYt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APG-eG-phY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4113.04347826087" y="-822.32142857142856"/>
+            <point key="canvasLocation" x="5933.3333333333339" y="-822.32142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="caI-TB-RNe">
@@ -448,25 +594,28 @@
                                 <rect key="frame" x="-50" y="-10" width="500" height="900"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" maximumZoomScale="100" text="角花蟾屬（學名：Ceratophrys），又名角蛙屬，無尾目角花蟾科，俗稱角蛙。產地為中南美洲。野生種除了捕食昆蟲、蝸牛外，也會以小型魚類、其他小型蛙類、老鼠等小型脊椎動物為食。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cKc-5p-uRQ">
-                                <rect key="frame" x="44" y="195" width="327" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" maximumZoomScale="100" text="角花蟾屬（學名：Ceratophrys），又名角蛙屬，無尾目角花蟾科，俗稱角蛙。產地為中南美洲。野生種除了捕食昆蟲、蝸牛外，也會以小型魚類、其他小型蛙類、老鼠等小型脊椎動物為食。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cKc-5p-uRQ">
+                                <rect key="frame" x="44" y="195" width="326" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="2sh-4c-pjD"/>
+                                </constraints>
                                 <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="野生角蛙的平均壽命約為 1~4 年，但在人工飼育環境下時，可長達 6~10 年甚至更長。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ee-jY-S3j">
-                                <rect key="frame" x="44" y="355" width="327" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="野生角蛙的平均壽命約為 1~4 年，但在人工飼育環境下時，可長達 6~10 年甚至更長。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ee-jY-S3j">
+                                <rect key="frame" x="44" y="355" width="326" height="66"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="dUc-cb-9gW"/>
+                                </constraints>
                                 <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RGq-Gc-oFo">
-                                <rect key="frame" x="44" y="459" width="327" height="297"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RGq-Gc-oFo">
+                                <rect key="frame" x="44" y="459" width="326" height="297"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">角蛙是很貪食的掠食者，以昆蟲、小型哺乳動物、魚類、其他青蛙、小型爬蟲類為食。一頭成年雌性鐘角蛙（雌性體型多半大於雄性）有能力吞下完全長成的老鼠。
 角蛙也會以同類為食，通常是配偶，即使對方體型比自己來得大。因此在飼養時會建議飼主將角蛙個別分開來養。
@@ -476,35 +625,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="壽命" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WE5-sn-Rxq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="壽命" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WE5-sn-Rxq">
                                 <rect key="frame" x="52" y="325" width="83" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="食性" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX3-O1-kb6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食性" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX3-O1-kb6">
                                 <rect key="frame" x="52" y="429" width="37" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="角蛙介紹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uos-9I-EhV">
-                                <rect key="frame" x="123" y="98" width="168" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="角蛙介紹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uos-9I-EhV">
+                                <rect key="frame" x="134.5" y="118" width="145.5" height="43"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="資料來源：wiki https://zh.wikipedia.org/wiki/%E8%A7%92%E8%9B%99" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aoI-dt-XmD">
-                                <rect key="frame" x="44" y="764" width="327" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="資料來源：wiki https://zh.wikipedia.org/wiki/%E8%A7%92%E8%9B%99" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aoI-dt-XmD">
+                                <rect key="frame" x="44" y="764" width="326" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" link="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="80z-LF-1LB"/>
+                                </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -512,12 +660,35 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dzJ-UV-Ehl" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sX3-O1-kb6" secondAttribute="trailing" symbolic="YES" id="1I5-Oa-uU0"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="trailing" secondItem="aoI-dt-XmD" secondAttribute="trailing" id="20e-Wq-J6c"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="top" secondItem="uos-9I-EhV" secondAttribute="bottom" constant="34" id="46g-of-0Ut"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="leading" secondItem="6ee-jY-S3j" secondAttribute="leading" id="4Ta-4K-PZ2"/>
+                            <constraint firstItem="aoI-dt-XmD" firstAttribute="top" secondItem="RGq-Gc-oFo" secondAttribute="bottom" constant="8" id="6jg-05-0PE"/>
+                            <constraint firstItem="6ee-jY-S3j" firstAttribute="top" secondItem="WE5-sn-Rxq" secondAttribute="bottom" constant="8" id="9WZ-4p-AlU"/>
+                            <constraint firstItem="WE5-sn-Rxq" firstAttribute="leading" secondItem="dzJ-UV-Ehl" secondAttribute="leading" constant="52" id="9zo-bo-vJh"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="centerX" secondItem="uos-9I-EhV" secondAttribute="centerX" id="AUA-YT-grv"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="leading" secondItem="dzJ-UV-Ehl" secondAttribute="leading" constant="44" id="BNy-Ny-RWt"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="centerX" secondItem="2AP-bV-Ccj" secondAttribute="centerX" id="CHr-Ct-dle"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="leading" secondItem="aoI-dt-XmD" secondAttribute="leading" id="GCu-NO-HS3"/>
+                            <constraint firstItem="RGq-Gc-oFo" firstAttribute="top" secondItem="sX3-O1-kb6" secondAttribute="bottom" constant="8" id="HPE-eD-xRD"/>
+                            <constraint firstItem="WE5-sn-Rxq" firstAttribute="leading" secondItem="sX3-O1-kb6" secondAttribute="leading" id="Jo6-JC-6Ik"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="trailing" secondItem="6ee-jY-S3j" secondAttribute="trailing" id="Wai-gf-hvd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aoI-dt-XmD" secondAttribute="bottom" constant="-2" id="bVI-RI-jfG"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="leading" secondItem="RGq-Gc-oFo" secondAttribute="leading" id="e8r-bZ-8pt"/>
+                            <constraint firstItem="dzJ-UV-Ehl" firstAttribute="trailing" secondItem="WE5-sn-Rxq" secondAttribute="trailing" constant="279" id="gSY-86-w5t"/>
+                            <constraint firstItem="sX3-O1-kb6" firstAttribute="top" secondItem="6ee-jY-S3j" secondAttribute="bottom" constant="8" id="jYp-TC-1G5"/>
+                            <constraint firstItem="WE5-sn-Rxq" firstAttribute="top" secondItem="2AP-bV-Ccj" secondAttribute="top" constant="325" id="k8g-Om-jb9"/>
+                            <constraint firstItem="cKc-5p-uRQ" firstAttribute="trailing" secondItem="RGq-Gc-oFo" secondAttribute="trailing" id="ngh-Yc-QrX"/>
+                            <constraint firstItem="WE5-sn-Rxq" firstAttribute="top" secondItem="cKc-5p-uRQ" secondAttribute="bottom" constant="10" id="rkY-nj-9Ku"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dzJ-UV-Ehl"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcm-X0-rPn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4895.652173913044" y="-1507.3660714285713"/>
+            <point key="canvasLocation" x="5932" y="-1560"/>
         </scene>
         <!--角蛙醫療-->
         <scene sceneID="Y94-oc-aHQ">
@@ -526,6 +697,38 @@
                     <view key="view" contentMode="scaleToFill" id="rl3-8r-ueT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="computer" translatesAutoresizingMaskIntoConstraints="NO" id="x22-aW-kL9">
+                                <rect key="frame" x="107" y="120" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ONo-1g-8Pm">
+                                <rect key="frame" x="107" y="420" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbX-Is-EOj">
+                                <rect key="frame" x="82" y="120" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="角蛙照護">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zNe-FV-y4y" kind="show" id="5Re-A7-Hmz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eh0-Gf-jTR">
+                                <rect key="frame" x="82" y="420" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="角蛙醫院">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kbP-N3-Qe0" kind="show" id="8NN-zH-BZv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.4107134744" green="1" blue="0.73246902589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="rXW-Tx-21R"/>
                     </view>
@@ -533,47 +736,265 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjP-o8-TOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4113" y="545"/>
+            <point key="canvasLocation" x="5931.884057971015" y="583.92857142857144"/>
         </scene>
-        <!--home-->
-        <scene sceneID="fcY-Sq-ekK">
+        <!--View Controller-->
+        <scene sceneID="2Ul-KP-xmv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="25e-ru-vLR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="home" image="4" id="glr-av-MVp"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lp8-G5-wMa">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7ZS-YD-KYk" kind="relationship" relationship="rootViewController" id="CAb-Uk-0qH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n4R-Xv-S4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="zNe-FV-y4y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6MM-Cf-ThK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frogbackground" translatesAutoresizingMaskIntoConstraints="NO" id="gyy-ES-2s8">
+                                <rect key="frame" x="-43" y="-58" width="500" height="900"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="角蛙照護" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qv-If-amm">
+                                <rect key="frame" x="135" y="118" width="159" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ul-8o-aET">
+                                <rect key="frame" x="20" y="169" width="374" height="576"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="IvQ-4b-Zhr">
+                                        <rect key="frame" x="15" y="0.0" width="350" height="3700"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W6V-3j-8UE">
+                                                <rect key="frame" x="16" y="20" width="318" height="3600"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.50251498287671237" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">🌀餵食：
+常見的蛙種南美/蝴蝶/鐘角/秘魯/牛蛙，夏天 5cm↓一周餵食2次，5cm↑保持一周餵食1次
+冬天 全部一周1次或二周1次 (不勉強為主)；冬天因為氣候低溫，新陳代謝慢消化速度也會減慢，排便也會延長到1-2個月才拉屎，所以依夏天餵食的量到冬天要減少掉1/3，幼蛙在冬天改一周餵1次，最保險的是一周1餐
+在這一周期間若內提前排便請不要追餵，一定要維持1周後才能再餵食．
+
+🌀如何才知道他有屎呢?
+背後照光，往底下看，肚子左側有黑影就是腸子裡有屎哦(也就是蛙的右邊)正常餵食且飼料量足夠，7-10天會固定排便1次，若1-2個月未排便可用陳醫師教導的人工雨方式去催屎．
+
+🌀冬天
+幼蛙或未滿一年以上的亞成蛙休眠，不要睡超過1周(通常幼蛙不會休眠)照正常方式養即可．
+
+不讓蛙休眠的方法:
+睡五天/第六天放入淺水盆喚醒/第七天餵食，這種短時間的睡眠也不用等排完便照正常走就好，所以不用擔心幼蛙睡死，真正休眠至少要二周不吵不動他，才可以算真正的休眠結厚繭，當然
+要休眠的蛙體態一定要良好(又肉又胖)才有足夠體力睡上1-3個月；想睡的蛙，要擋你也擋不住
+想睡的蛙若亞成以上，那就是真的想進入休眠，想睡的蛙若是幼蛙，要留意健康狀況(可能病了)．
+
+加溫要有恆溫的條件:
+沒有溫控調節器，光靠體感溫度去試，風險太大，太熱太悶，一晚立刻眼霧中暑，寧可不要加溫，使用加溫墊片不要在底部水區加溫，陸地和水區溫差大，蛙下水會承受不了，加溫墊片請放盒外四面壁區。
+
+泡冷水叫醒，不要用溫水
+也不要游泳(體力尚未恢復)
+
+室溫與水溫落差太大會突然休克!
+角蛙適應溫度雖然是25-28度，但不能直接就給他泡25-28度的溫水，例如:
+室溫17度，用20-22的水溫/
+室溫20度，用23-25度的水溫，所謂的溫水不是人的體感溫度就是溫水，安全起見，用常溫水(水龍頭直接出來的溫度)，來給他泡水就好，當然如果是長時間泡一定要用除氯的常溫水，如果只是玩玩水/游泳，用自來水沒關係，休眠後體力還沒恢復前，不能直接丟去游泳，醒後隔天再餵食，不吃就算了，至少要吸收到水份，游泳/餵食 都要等他醒後1-2天才可執行．
+
+二周以上還拒食的蛙要看胖瘦程度來評估，過瘦就要先強制餵食1/3的飼料撐住體力，養胖了等天氣回暖，再用餓二周餵食法磨嘴再試(胖瘦看四肢粗細，不是看肚子)；沒進入休眠的蛙全改成一周1餐1/2或1/3即可，
+不要再超量餵食
+角蛙冬天的消化狀況會比夏天差
+也許不吃再改二周餵1次也可以
+排便相對沒有夏天穩定
+可能3-4周排便，甚至1-2個月
+因為氣候冷新陳代謝減低，正常．
+
+
+🌀量的取捨
+5cm↓幼蛙以蛙頭的1/3
+5cm↑成蛙後可增量為蛙頭的1/2(附圖)
+
+🌀針對霸王角蛙相關
+夏/冬天，一周餵1次
+5cm↓餵食量為蛙頭1/3或2/3(依四肢胖瘦做斟酌)
+5cm↑餵食量為蛙頭1/2
+因為據說霸王角蛙的腸子比其它蛙種的腸子還來的長，進食頻率太近或太多可能造成過量暴斃．
+
+霸王是幼蛙期風險最高的蛙種
+緊張/壓迫/訓餌不佳/突然改變環境/無法翻身，太多太多的離奇死因全出現在霸王身上，還會有拒食到死的高風險在吃到愛吃的活體後要改飼料很難開口，因此新手不建議玩…
+
+如果你的幼蛙一周餵2次很難開口，改成一星期餵1次，隔7天比較餓也比較好訓餌．
+
+🌀飼料選擇
+1.SUDO(日本製)
+2.PAC ATTACK(高夠力 日本製)
+3.Zoo med (美國製)
+
+🌀保健
+1.NutriBAC (益生菌) ←陳醫師推薦
+2.Bio Nutri (益生菌)
+3.Rep-Cal (鈣粉+D3)
+4.Rep-Cal CALCIUM (純鈣粉無D3)
+5.Rep-cal 綜合維他命
+
+🌀額外營養
+1.黑水虻(ㄇㄥˊ)蟲粉
+2.REPASHY 豹紋守宮專用飼料
+
+益生菌幫助消化，D3鈣粉的D3幫助鈣吸收，二種不要混合．
+
+🌀如何分配添加品：(參考)
+一個月加2次鈣粉和1次的益生菌
+分配可以這樣
+第1周-高夠力+D3鈣 或純鈣
+第2周-高夠力
+第3周-高夠力+D3鈣 或純鈣
+第4周-高夠力+益生菌
+依此類推
+
+🌀活體餵食選擇:
+乳鼠/冷凍乳鼠：乳鼠含有大量的VitA，很多人誤以為乳鼠可以補鈣，事實上他是導致代謝性骨病與缺鈣的元兇，因此餵食乳鼠一個月1次即可，當月適量添加鈣粉補足，(以上資訊由陳醫師提醒說明)．
+
+小牛蛙(美國牛蛙/台灣虎皮蛙)：
+天擇下來的野蛙基因健全，沒被過度改良，因此抵抗小病菌強(能共存)，若人工培育蛙(過度培育基因弱化抵抗力差)，餵食小牛蛙後，很可能因為小牛蛙身上的一點小病菌，讓角蛙感染疾病而死亡．
+
+朱文錦；
+鯉科魚類身上有Thiaminase硫胺素/抗硫胺素，會破壞B1以及阻礙B1的吸收，長期餵食鯉科魚類，會導至角蛙缺乏B1，檢疫方式若用藥物來殺菌，魚身上所殘留藥物也有安全疑慮，最好的方式是將朱文錦/小紅豆/孔雀魚(交錯魚種，不要單一餵食朱文錦)
+養殖2周帶菌的魚會先死，存活下來的就可餵食角蛙，但是我不餵魚，因為風險對角蛙來說實在太高了．
+
+活泥鰍；
+蛙是用吞食的，吞下泥鰍不可能立即死在肚內，曾有案例發生角蛙下巴不明原因潰爛破洞，送醫後才知在舌下夾出2條腐敗小泥鰍，吞食後從嘴裡鑽進舌下造成，建議是將泥鰍切塊餵食較安全，滑滑黏液要洗掉，細菌疾病是否會傳染給角蛙還未證實．
+
+野生昆蟲/動物：
+野外動物的體內寄生蟲和疾病不得而知，因此不建議餵食野生動物，就算蟋蟀.麵包蟲.杜比亞.大麥蟲來自水族館購買，肚子裡吃下的垃圾也要餵養二天後清腸道
+並且挑剛脫殼的蟲餵蛙，外殼較軟，蛙好消化吸收，蟋蟀要去帶刺的後腿，大麥蟲要剪頭或淹死．
+
+昆蟲的選擇順序：
+蠶寶寶/蠟蟲/蟋蟀或櫻桃紅蟑/大麥蟲/麵包蟲
+
+🌀底材：
+5cm↓幼蛙請用棉養，乾溼分離確實，市售土有很多種，無法確定每位飼主買什麼土，顆粒土又分大小顆，很難解釋的這麼細項
+但5cm↓幼蛙絕對不可用顆粒土
+幼蛙誤食顆粒黑土後，肛門不夠大無法排出體外，所以5cm↓幼蛙只教導棉養．
+
+成蛙幼蛙缸內不要有任何造景用小石塊，換黑土後要抓出來餵食，不管粉狀土或顆粒土，以免誤食太多黑土造成消化不良而死亡．
+
+市面上海棉很多種，請選擇吸水力不高的生化棉，才能保持乾溼分離，過濾棉(白棉)雖然便宜又軟，但是吸水力太高，表層水份不易下沈，無法保持表面乾燥
+搓洗後會塌陷，材質容易撕散造成角蛙勾趾受傷．
+
+生化棉(黑/綠棉)50-70元，吸水力低，搓洗不會塌，重覆使用時請用熱水浸泡過，但也要定期更換，一個月丟棄換新．
+
+也可選擇密度較高的"韓國海棉"表面較柔，接近生化棉的功效，角蛙肚皮比較不容易磨傷，
+或在生化棉上加墊止滑墊來保護肚皮．
+
+🌀混養注意：
+可能造成缺趾傷殘或互食合體，
+併缸要加蓋，角蛙看似肥肥的但跳躍力也很強，有版友發生過南美跳去吃小非牛再跳回原缸．
+
+🌀水質選擇：
+三胞胎過濾水/礦泉水/加水站的水
+
+🌀禁用：
+自來水(無除氯 蛙會氯中毒)
+曝氣過的自來水(曝完氣都不知生成多少菌了)
+
+🌀見到拉屎立即換水
+2天換水1次，不管髒不髒
+蛙尿有味道，有異味就換
+
+補充：
+角蛙最怕悶，請保持飼養箱空氣流通
+最好選擇5面都有通風孔(附圖)
+尤其是冬天會用加溫墊片的蛙
+
+以上提供參考用
+因飼養環境不同，蛙種不同
+管理照顧的模式隨蛙種而異．
+</string>
+                                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="cwg-Qp-nKT"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="6cV-Kl-ocg"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="95n-nE-pby"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="0.0" height="3900"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="資料來源：蛙洞蟾穴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-1Y-Gea">
+                                <rect key="frame" x="103" y="772" width="166" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.facebook.com/myfrogfrog/posts/369136113478270?__tn__=K-R" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HFK-Vw-KU3">
+                                <rect key="frame" x="277" y="763" width="48" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="K3g-Q7-LRB">
+                                <rect key="frame" x="277" y="763" width="48" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpN-Pj-rfL">
+                                <rect key="frame" x="333" y="763" width="48" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="facebook"/>
+                                <connections>
+                                    <action selector="fbButton:" destination="AqA-l3-r1N" eventType="touchUpInside" id="pZC-LU-yJ5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9iv-SH-j9D"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2w2-fs-5tw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AqA-l3-r1N" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2349.275362318841" y="-180.13392857142856"/>
+            <point key="canvasLocation" x="6733.3333333333339" y="585.9375"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="SPy-eT-tRl">
+        <!--View Controller-->
+        <scene sceneID="e1J-1s-4ls">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ez6-MT-uMX" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Kd-Jc-lgg">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="25e-ru-vLR" kind="relationship" relationship="viewControllers" id="39l-pv-wlq"/>
-                        <segue destination="fv5-6R-OZf" kind="relationship" relationship="viewControllers" id="VvA-gA-7wH"/>
-                        <segue destination="pkm-Bo-3aY" kind="relationship" relationship="viewControllers" id="aJk-LK-mdA"/>
-                        <segue destination="43C-8i-qWv" kind="relationship" relationship="viewControllers" id="810-Dx-eDe"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9cu-I9-5ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="kbP-N3-Qe0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXw-8A-uMd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frogbackground" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-bv-zap">
+                                <rect key="frame" x="-43" y="-58" width="500" height="900"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="角蛙醫院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-3K-RVN">
+                                <rect key="frame" x="135" y="118" width="159" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3y6-ku-p9q">
+                                <rect key="frame" x="68" y="281" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rzr-BH-p1X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3r-N5-dNo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439.1304347826087" y="-180.13392857142856"/>
+            <point key="canvasLocation" x="6729" y="1227"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="R5Z-BP-EhO">
@@ -587,6 +1008,151 @@
                                 <rect key="frame" x="-50" y="-10" width="500" height="900"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="角蛙種類" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3v-do-lfg">
+                                <rect key="frame" x="135" y="118" width="159" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uJt-Si-d49">
+                                <rect key="frame" x="20" y="169" width="374" height="576"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="1uv-34-Vj8">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="4660"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MHL-sx-H59">
+                                                <rect key="frame" x="35" y="330" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">鐘角蛙（學名：Ceratophrys ornata）又名阿根廷角蛙或珍珠角蛙或飾紋角花蟾，此種有鮮明的體色，大部份皆為深綠色且帶有深紅色線條，但也有因地區的不同而呈紅色的個體，全身布滿了不規則斑塊，腹部周圍為黃色，臉部呈一條條的粗線（可由此特 徵與美南角蛙作為區別），身體呈矮胖狀，眼上突起短。喜將半身藏於土中。體色會因 環境的不同而有所改變。鐘角蛙為南美洲的特有種，分布在巴西南部、烏拉圭、阿根廷等地。以昆蟲、囓齒類、蜥蜴、其他青蛙為食，飼育時有因貪食，而導致死亡的現象。</string>
+                                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="vIp-MD-hGg">
+                                                <rect key="frame" x="35" y="15" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="namay" translatesAutoresizingMaskIntoConstraints="NO" id="nri-Xt-PTR">
+                                                <rect key="frame" x="35" y="660" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CZR-R6-B3O">
+                                                <rect key="frame" x="35" y="990" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">南美角蛙（學名：Ceratophrys cranwelli）又名綠角蛙、翡翠角蛙，分布南美洲阿根廷、玻利維亞、巴拉圭及巴西的大廈谷地帶。幼體通常呈淺綠色，成體則大部分為褐色（也有綠色或橘色但很稀少），是此種的最大特色，全身有較大的不規則斑塊，臉部也呈斑塊狀。本種在乾旱期會自己用繭包起埋在地下，到了雨季來臨會爬出來繁殖。一次有12～35個卵塊附著在水草上。全部約有2000～4000顆卵。體（肛吻）長約 8～13 cm（3.1～5.1英寸），體重則可至 0.5公斤（1.1磅）。目前市面上的角蛙（包括白子）大部分為本種。</string>
+                                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="sulinan" translatesAutoresizingMaskIntoConstraints="NO" id="XR8-1p-okb">
+                                                <rect key="frame" x="35" y="1320" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-DN-gxP">
+                                                <rect key="frame" x="35" y="1650" width="300" height="250"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">蘇利南角蛙（學名：Ceratophrys cornuta）又被稱為亞馬遜角蛙或霸王角蛙，分布於南美洲北部。在所有角花蟾屬中，此種是眼上突起最發達的，背部有蝴蝶狀的花紋，體色有褐、橘、綠、灰白等，喉部呈整片深黑色，口腔內為白色，後肢有發達的蹼。據調查，台灣市場上霸王角蛙目前普遍為CB種，個性溫馴膽小，進食速度慢消化器官弱，飼養需注意。</string>
+                                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="basi" translatesAutoresizingMaskIntoConstraints="NO" id="TaY-ca-Srq">
+                                                <rect key="frame" x="35" y="1930" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zka-AT-P5s">
+                                                <rect key="frame" x="35" y="2260" width="300" height="250"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">巴西角蛙（英語：Ceratophrys aurita）是屬於角花蟾科的一種青蛙，為巴西的特有種。牠們棲息於熱帶與亞熱帶的潮濕森林低地、淡水河流濕地和池塘。角蛙中號稱可達30CM的大型品種( 到目前為止是還沒看過有超過20CM以上的個體 至於事實如何或是飼養及個體導致 就不得而知了 ) 個性跟鍾角一樣相當兇猛粗獷也是單價較高的角蛙 個體花色差異很大 通常也會參雜著其他顏色。
+</string>
+                                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="klbya" translatesAutoresizingMaskIntoConstraints="NO" id="lcI-Dw-HXB">
+                                                <rect key="frame" x="35" y="2530" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="哥倫比亞角蛙（學名：Ceratophrys calcarata）為細趾蟾科角花蟾屬下的一個種。數量稀少特色不大，外型有點類似南美+鐘角的混雜個體，目前台灣市場不流通，據說台灣曾有進口的紀錄 僅那麼一次，不過無確切資料依據能夠證實。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OUf-0q-uog">
+                                                <rect key="frame" x="35" y="2850" width="300" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="milu" translatesAutoresizingMaskIntoConstraints="NO" id="6Li-QM-c4S">
+                                                <rect key="frame" x="35" y="3030" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="秘魯角蛙(Ceratophrys stolzmanni) 珍稀程度5顆星，少量入荷，秘魯角蛙顏色變化很大，目前有紅色型、綠色型二種，成體公的只有5cm、母的7cm，在所有角蛙中是最小型的品種，比一般角蛙小上許多，也可以稱為侏儒角蛙。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RXp-9f-Vsu">
+                                                <rect key="frame" x="35" y="3360" width="300" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="prairie" translatesAutoresizingMaskIntoConstraints="NO" id="xbM-35-0g8">
+                                                <rect key="frame" x="35" y="3530" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="草原角蛙(Ceratophrys joazeirensis)市場上的外型長得跟巴西非常相似 市場貨源不穩定，眼睛的斑紋和體態的紋路可以當作區分的方法背部類似比較散的蝴蝶紋型似巴西，幼體就有明顯的角，綠色個體較常見。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P0a-78-bZJ">
+                                                <rect key="frame" x="35" y="3860" width="300" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="testudo" translatesAutoresizingMaskIntoConstraints="NO" id="QOf-Kv-dmD">
+                                                <rect key="frame" x="35" y="4030" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LlT-Th-feZ">
+                                                <rect key="frame" x="35" y="4360" width="300" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">厄瓜多角蛙(Ceratophrys testudo)此種角蛙僅在厄瓜多爾東部的帕斯撒河的源頭發現過，分佈地區生態資料等都還是未知數，文獻記載最後一次紀錄是半個世紀前 此後就再無相關標本了(神一般的存在)，究竟是真的早已滅絕又或是原產地過於蠻荒而不好定位呢?</string>
+                                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.5040667808219178" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="bNd-Wg-Ym9"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Xjz-U9-PmY"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="JDV-1a-8hw"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="0.0" height="4700"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-qr-cgw">
+                                <rect key="frame" x="140" y="760" width="121" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" cocoaTouchSystemColor="systemRedColor"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="資料來源" image="arrowshape.turn.up.right.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pRh-cH-NTw" kind="show" id="ALn-ye-Lj1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DeM-7V-pYl"/>
@@ -594,7 +1160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXs-va-H1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4896" y="-822"/>
+            <point key="canvasLocation" x="6715.9420289855079" y="-822.32142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yNs-CM-yWb">
@@ -619,10 +1185,129 @@
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7mi-EG-bFd"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DcT-lm-ocK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gD2-Iq-dYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3259" y="590"/>
+            <point key="canvasLocation" x="4025" y="-180"/>
+        </scene>
+        <!--home-->
+        <scene sceneID="dkh-zD-WYe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IgU-m1-QIo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="home" image="4" id="mhc-cb-xZj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EFZ-Bo-0pb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NJN-aR-GOe" kind="relationship" relationship="rootViewController" id="d5E-vx-b9N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSr-NF-vFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3168" y="-180"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3Zc-wH-MmE">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="o4E-dD-GlB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9eF-jh-nUX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IgU-m1-QIo" kind="relationship" relationship="viewControllers" id="caU-ie-1in"/>
+                        <segue destination="fv5-6R-OZf" kind="relationship" relationship="viewControllers" id="wjc-Aj-k7l"/>
+                        <segue destination="pkm-Bo-3aY" kind="relationship" relationship="viewControllers" id="9xN-UQ-qj8"/>
+                        <segue destination="43C-8i-qWv" kind="relationship" relationship="viewControllers" id="OoJ-id-UTc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7VV-gR-3we" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2338" y="-180"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7y9-vi-9s3">
+            <objects>
+                <viewController id="pRh-cH-NTw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RyE-Yd-FxO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frogbackground" translatesAutoresizingMaskIntoConstraints="NO" id="NXX-N4-UTt">
+                                <rect key="frame" x="-50" y="-10" width="500" height="900"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TNJ-Zy-0Uf">
+                                <rect key="frame" x="20" y="556" width="374" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.49860873290000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">https://conny123.pixnet.net/blog/post/115056886-%E8%A7%92%E8%9B%99%E7%A8%AE%E9%A1%9E-%E7%B5%B1%E6%95%B4-%28%E6%AD%A4%E7%AF%87%E9%9A%A8%E6%99%82%E6%9B%B4%E6%96%B0%2C%E6%9B%B4%E6%AD%A3%29</string>
+                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="華人百科" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YN-oq-R3s">
+                                <rect key="frame" x="20" y="317" width="130" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://zh.wikipedia.org/wiki/%E8%A7%92%E8%9B%99" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V4r-uF-4u6">
+                                <rect key="frame" x="20" y="262" width="374" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.49860873290000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.itsfun.com.tw/%E7%A7%98%E9%AD%AF%E8%A7%92%E8%9B%99/wiki-1983588-9333358" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J3g-vA-vcF">
+                                <rect key="frame" x="20" y="372" width="374" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.49860873290000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="資料來源" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WR7-M0-s3j">
+                                <rect key="frame" x="135" y="118" width="159" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="維基百科" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etu-gk-9Eb">
+                                <rect key="frame" x="20" y="208" width="130" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="享獸 野性 部落格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtk-oc-2XQ">
+                                <rect key="frame" x="20" y="490" width="240" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="o68-KN-HSR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBy-dM-Inm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7376.811594202899" y="-822.32142857142856"/>
         </scene>
     </scenes>
     <resources>
@@ -631,20 +1316,31 @@
         <image name="3" width="16" height="16"/>
         <image name="4" width="16" height="16"/>
         <image name="UNADJUSTEDNONRAW_thumb_1a" width="1026" height="766"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="64" height="52"/>
         <image name="bala" width="674" height="545"/>
+        <image name="basi" width="1024" height="735"/>
+        <image name="clock" width="1024" height="818"/>
+        <image name="computer" width="512" height="512"/>
         <image name="eggs" width="512" height="512"/>
+        <image name="facebook" width="512" height="512"/>
         <image name="frog" width="512" height="512"/>
         <image name="frog (1)" width="512" height="512"/>
         <image name="frog (2)" width="512" height="512"/>
         <image name="frogbackground" width="959" height="1706"/>
         <image name="herbal" width="512" height="512"/>
+        <image name="klbya" width="683" height="512"/>
         <image name="lemon" width="365" height="450"/>
         <image name="littlegirl" width="4000" height="3000"/>
+        <image name="milu" width="322" height="211"/>
+        <image name="namay" width="250" height="217"/>
+        <image name="placeholder" width="512" height="512"/>
+        <image name="prairie" width="600" height="338"/>
+        <image name="sulinan" width="800" height="800"/>
+        <image name="testudo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ujk-gv-URc"/>
         <segue reference="gEG-VM-yp8"/>
         <segue reference="nVw-eI-gOJ"/>
-        <segue reference="use-B3-o2C"/>
     </inferredMetricsTieBreakers>
 </document>

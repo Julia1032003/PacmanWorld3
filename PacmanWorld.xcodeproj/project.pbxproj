@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1E9C7D322E9BE9E006FC9AA /* fbButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9C7D222E9BE9E006FC9AA /* fbButtonViewController.swift */; };
 		E1EB094522E46BD40023DBBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EB094422E46BD40023DBBE /* AppDelegate.swift */; };
 		E1EB094722E46BD40023DBBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EB094622E46BD40023DBBE /* SceneDelegate.swift */; };
 		E1EB094922E46BD40023DBBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EB094822E46BD40023DBBE /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E1E9C7D222E9BE9E006FC9AA /* fbButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fbButtonViewController.swift; sourceTree = "<group>"; };
 		E1EB094122E46BD40023DBBE /* PacmanWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacmanWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EB094422E46BD40023DBBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1EB094622E46BD40023DBBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				E1EB094622E46BD40023DBBE /* SceneDelegate.swift */,
 				E1EB094822E46BD40023DBBE /* ViewController.swift */,
 				E1EB094A22E46BD40023DBBE /* Main.storyboard */,
+				E1E9C7D222E9BE9E006FC9AA /* fbButtonViewController.swift */,
 				E1EB094D22E46BD50023DBBE /* Assets.xcassets */,
 				E1EB094F22E46BD50023DBBE /* LaunchScreen.storyboard */,
 				E1EB095222E46BD50023DBBE /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				E1EB094922E46BD40023DBBE /* ViewController.swift in Sources */,
 				E1EB094522E46BD40023DBBE /* AppDelegate.swift in Sources */,
+				E1E9C7D322E9BE9E006FC9AA /* fbButtonViewController.swift in Sources */,
 				E1EB094722E46BD40023DBBE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
